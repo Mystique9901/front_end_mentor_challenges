@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --gray700: hsl(0, 0%, 20%);
+        --gray800: hsl(0, 0%, 12%);
+        --gray900: hsl(0, 0%, 8%);
+        --fontSize: 14px;
+        --fontfamily: "Inter", sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-color: var(--gray900);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .dis-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        background-color: var(--gray800);
+        /* width: 20%; */
+        padding:30px; 
+        gap:17px; 
+      }
+
+      .profile-con{
+        gap:15px; 
+      }
+
+      .img-con {
+        width: 80px;
+        height: 80px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .name-lo-con h2{
+        font-weight: 700;
+      }
+
+      .name-lo-con p {
+        color: var(--green); 
+      }
+
+      .discription {
+        font-weight: 400;
+        
+      }
+
+      .social-con{
+        width: 100%;
+        gap:10px; 
+      }
+      .social-con a {
+        background-color: var(--gray700);
+        width: 100%;
+        font-weight: 800;
+        text-align: center;
+        border-radius: 5px;
+        padding: 3px 0px; 
+      }
+
+      .social-con a:hover{
+        background-color: var(--green);
+        color:black;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (max-width: 2199px){
+        .container{
+          width: 20%;
+          
+        }
+      }
+
+      
+      @media only screen and (max-width : 1439px) {
+        .container{
+          width: 25%;
+          
+        }
+      }
+      
+
+      @media only screen  and (max-width : 655px){
+        .container{
+          width: 50%;
+        }
+      }
+
+
+      @media only screen  and (max-width: 375px){
+        .container{
+          width: 80%;
+        }
+
+        .container{
+          padding: 15px; 
+        }
+
+        
+      }
+
+     
+      
+    </style>
+  </head>
+  <body>
+    <div class="container dis-flex">
+      <div class="profile-con dis-flex">
+        <div class="img-con">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="profile image" />
+        </div>
+        <div class="name-lo-con dis-flex">
+          <h2>Jessica Randall</h2>
+          <p>London, United Kingdom</p>
+        </div>
+
+        <p class="discription">"Front-end developer and avid reader."</p>
+      </div>
+
+      <div class="social-con dis-flex">
+        <a class="social">GitHub</a>
+        <a class="social">Frontend Mentor</a>
+        <a class="social">LinkedIn</a>
+        <a class="social">Twitter</a>
+        <a class="social">Instagram</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mystique</a>.
+    </div>
+  </body>
+</html>
