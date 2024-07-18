@@ -25,7 +25,7 @@
     <style>
       :root {
         --whitebg: hsl(0, 0%, 100%);
-        --lightGray: hsl(212, 45%, 89%);
+        --lightGray: hsl(211, 19%, 75%);
         --GrayishBlue: hsl(220, 15%, 55%);
         --DarkBlue: hsl(218, 44%, 22%);
         --pFont: 15px;
@@ -59,7 +59,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px; 
+        gap: 30px; 
       }
       img {
         width: 100%;
@@ -77,12 +77,14 @@
         font-size: var(--font);
         font-weight: var(--boldWeight);
         text-align: center;
+        
       }
 
       p {
         font-size: var(--pFont);
         font-weight: var(--lightWeight);
         text-align: center;
+        color: var(--GrayishBlue);
       }
 
       .attribution {
@@ -94,17 +96,8 @@
       }
 
       
-      @media only screen and (max-width : 2440px){
-        .container{
-          width: 20%;
-        }
-      }
+     
 
-      @media only screen and (max-width : 1439px) {
-        .container{
-          width: 30%;
-        }
-      }
       
 
       @media only screen and (max-width : 655px){
@@ -120,6 +113,18 @@
         }
       }
 
+      @media only screen and (max-width : 2440px){
+        .container{
+          width: 20%;
+        }
+      }
+
+      
+      @media only screen and (max-width : 1439px) {
+        .container{
+          width: 30%;
+        }
+      }
     
 
       
